@@ -14,4 +14,6 @@ cat > index.html <<'EOF'
 <h1>Hello from my custom index</h1>
 EOF
 
-sud0 docker cp ./index.html <container_id_or_name>:/usr/share/nginx/html/index.html
+sudo docker cp ./index.html <container_id_or_name>:/usr/share/nginx/html/index.html
+
+sudo docker exec -it <container_id_or_name> /bin/bash
