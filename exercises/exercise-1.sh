@@ -16,4 +16,6 @@ EOF
 
 sudo docker cp ./index.html <container_id_or_name>:/usr/share/nginx/html/index.html
 
-sudo docker exec -it <container_id_or_name> /bin/bash
+sudo docker exec -it <container_id_exitor_name> /bin/bash
+
+exit
