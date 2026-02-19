@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    environment:
+      APP_ENV: "dev"
+      DB_PASSWORD: "super-secret-123"
