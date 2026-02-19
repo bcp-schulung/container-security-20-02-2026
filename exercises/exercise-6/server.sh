@@ -17,6 +17,3 @@ fi
 # keep container alive for inspection
 echo "Sleeping... (Ctrl+C to stop)"
 sleep infinity
-EOF
-
-chmod +x app/server.sh
