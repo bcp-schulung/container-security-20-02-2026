@@ -6,7 +6,7 @@ RUN getent group web >/dev/null || addgroup -S web \
   && getent passwd web >/dev/null || adduser -S -D -H -G web web
 
 RUN mkdir -p /var/www/html \
-	     /var/lib/nginx \
+	     /var/lib/nginx/logs \
 	     /var/tmp/nginx \
 	     /run/nginx \
 	     /etc/nginx/conf.d
@@ -23,4 +23,4 @@ EXPOSE 8080
 USER web
 
 STOPSIGNAL SIGQUIT
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["nginx", "-e", "/dev/stderr", "-g", "daemon off;"]
