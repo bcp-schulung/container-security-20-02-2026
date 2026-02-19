@@ -1,4 +1,3 @@
-cat > app/server.sh <<'EOF'
 #!/usr/bin/env sh
 set -eu
 
