@@ -15,3 +15,5 @@ sudo apt update
 sudo apt-get install -y docker-ce-rootless-extras
 dockerd-rootless-setuptool.sh install --force
 docker info
+
+sudo apt-get -y install podman
